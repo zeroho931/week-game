@@ -1,0 +1,26 @@
+{
+  "gameBoard": [
+    {
+      "id": "1",
+      "rows": 5,
+      "cols": 5,
+      "letters": ["A", "B", "C", "D", "E"]
+    },
+    {
+      "id": "2",
+      "rows": 5,
+      "cols": 5,
+      "letters": ["F", "G", "H", "I", "J"]
+    }
+  ],
+  "wordList": [
+    {
+      "id": "1",
+      "word": "HELLO"
+    },
+    {
+      "id": "2",
+      "word": "WORLD"
+    }
+  ]
+}
