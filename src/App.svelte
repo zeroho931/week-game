@@ -1,16 +1,24 @@
+<!-- App.svelte -->
 <script>
-  import { Router, Route } from "svelte-routing";
+  import { Router, Link } from "svelte-routing";
   import WordSearchMaker from "./WordSearchMaker.svelte";
-  import WordSearchGame from "./WordSearchGame.svelte";
-  import firebaseConfig from "./firebaseConfig.js"; // Firebase 설정 파일 불러오기
-  import { initializeApp } from "firebase/app";
 
-  // Firebase 초기화
-  const app = initializeApp(firebaseConfig);
+  // 새로운 상태 변수 추가
+  let gameStarted = false;
 </script>
 
 <Router>
-  <!-- 각 페이지에 대한 라우트 정의 -->
-  <Route path="/" component={WordSearchMaker} />
-  <Route path="/game" component={WordSearchGame} />
+  <WordSearchMaker path="/" />
 </Router>
+
+<style>
+  /* 추가한 CSS 스타일 */
+  nav {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+</style>
